@@ -70,7 +70,7 @@ class PhoneBook:
         index = int(input(f"Введите номер контакта для редактирования не больше {len(self.contacts)}: "))
         self.get_list()
         field = input("Введите поле из списка для редактирования: ").capitalize()
-        if index > len(self.contacts) or field not in self.contacts[index - 1]:
+        if index <= 0 or index > len(self.contacts) or field not in self.contacts[index - 1]:
             print("Неверный индекс или такого поля нет. Начните сначала.")
         elif 1 <= index <= len(self.contacts) and field in self.contacts[index - 1]:
             new_value = input(f"Введите новое значение для {field}: ")
