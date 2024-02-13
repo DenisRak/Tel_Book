@@ -68,7 +68,6 @@ class PhoneBook:
 
     def edit_contact(self, index):
         """Редактирование информации о контакте."""
-
         self.get_list()
         field = input("Введите поле из списка для редактирования: ").capitalize()
         if index <= 0 or index > len(self.contacts) or field not in self.contacts[index - 1]:
@@ -123,7 +122,6 @@ def main():
                 phone_book.edit_contact(index)
             except ValueError:
                 print('Зрачение должно быть числом')
-
         elif choice == "4":
             phone_book.search_contacts()
         elif choice == "5":
