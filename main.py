@@ -66,7 +66,7 @@ class PhoneBook:
         print('Список полей справочника:')
         print('Фамилия', 'Имя', 'Отчество', 'Организация', 'Рабочий телефон', 'Личный телефон', sep=', ')
 
-    def edit_contact(self, index):
+    def edit_contact(self, index: int):
         """Редактирование информации о контакте."""
         self.get_list()
         field = input("Введите поле из списка для редактирования: ").capitalize()
