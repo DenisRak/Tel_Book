@@ -121,7 +121,7 @@ def main():
                 index = int(input(f"Введите номер контакта для редактирования : "))
                 phone_book.edit_contact(index)
             except ValueError:
-                print('Зрачение должно быть числом')
+                print('Значение должно быть числом')
         elif choice == "4":
             phone_book.search_contacts()
         elif choice == "5":
