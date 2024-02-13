@@ -4,9 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="1133812e-0167-4cc6-9060-08ce604e072d" name="Changes" comment="update file">
-      <change beforePath="$PROJECT_DIR$/phone_book_data.json" beforeDir="false" />
-    </list>
+    <list default="true" id="1133812e-0167-4cc6-9060-08ce604e072d" name="Changes" comment="update file" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -118,7 +116,21 @@
       <option name="project" value="LOCAL" />
       <updated>1707831239442</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="update file">
+      <created>1707831570004</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1707831570004</updated>
+    </task>
+    <task id="LOCAL-00008" summary="update file">
+      <created>1707831749290</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1707831749290</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
