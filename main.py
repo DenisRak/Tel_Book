@@ -1,8 +1,9 @@
 import json
 from datetime import datetime
+
 class PhoneBook:
     def __init__(self, file_path: str):
-        """Инициализация объекта PhoneBook."""
+        """ Инициализация объекта PhoneBook."""
         self.file_path = file_path
         self.contacts = self.load_data()
 
@@ -29,8 +30,8 @@ class PhoneBook:
             if i % page_size == 0 or i == len(self.contacts):
                 input("Нажмите Enter для продолжения...")
 
-
-    def display_contact_details(self, contact: dict):
+    @staticmethod
+    def display_contact_details(contact: dict):
         """Вывод подробной информации о контакте."""
         print(f"ФИО: {contact['Фамилия']} {contact['Имя']} {contact['Отчество']}")
         print(f"Организация: {contact['Организация']}")
@@ -65,9 +66,9 @@ class PhoneBook:
         print('Список полей справочника:')
         print('Фамилия', 'Имя', 'Отчество', 'Организация', 'Рабочий телефон', 'Личный телефон', sep=', ')
 
-    def edit_contact(self):
+    def edit_contact(self, index):
         """Редактирование информации о контакте."""
-        index = int(input(f"Введите номер контакта для редактирования не больше {len(self.contacts)}: "))
+
         self.get_list()
         field = input("Введите поле из списка для редактирования: ").capitalize()
         if index <= 0 or index > len(self.contacts) or field not in self.contacts[index - 1]:
@@ -117,7 +118,12 @@ def main():
         elif choice == "2":
             phone_book.add_contact()
         elif choice == "3":
-            phone_book.edit_contact()
+            try:
+                index = int(input(f"Введите номер контакта для редактирования : "))
+                phone_book.edit_contact(index)
+            except ValueError:
+                print('Зрачение должно быть числом')
+
         elif choice == "4":
             phone_book.search_contacts()
         elif choice == "5":
