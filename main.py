@@ -79,6 +79,8 @@ class PhoneBook:
             self.contacts[index - 1]['Обновлен'] = data.strftime('%d/%m/%Y %H:%M')
             self.save_data(self.contacts)
             print("Контакт успешно обновлен.")
+        else:
+            print('Что то пошло не так. Начните сначала!')
 
     def search_contacts(self):
         """Поиск контактов по заданным критериям."""
